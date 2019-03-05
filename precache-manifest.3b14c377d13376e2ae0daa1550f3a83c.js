@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/tournament-schedule/static/css/2.a41caf64.chunk.css"
   },
   {
-    "revision": "c240391dfc0d431f83bf061648c627dc",
+    "revision": "9cd8002215dc737d5ab0e2a728a620c0",
     "url": "/tournament-schedule/index.html"
   }
 ];
