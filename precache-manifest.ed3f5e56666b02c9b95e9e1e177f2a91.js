@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/tournament-schedule/static/js/runtime~main.b9e2cc92.js"
   },
   {
-    "revision": "072c0cd0220d22f08750",
-    "url": "/tournament-schedule/static/js/main.072c0cd0.chunk.js"
+    "revision": "0f77dec67805f3c7067f",
+    "url": "/tournament-schedule/static/js/main.0f77dec6.chunk.js"
   },
   {
     "revision": "4bc44a55d45adbf93910",
     "url": "/tournament-schedule/static/js/2.4bc44a55.chunk.js"
   },
   {
-    "revision": "072c0cd0220d22f08750",
+    "revision": "0f77dec67805f3c7067f",
     "url": "/tournament-schedule/static/css/main.f870db5c.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/tournament-schedule/static/css/2.a41caf64.chunk.css"
   },
   {
-    "revision": "ed4a517a94d1cf9974eccaffc5010d5d",
+    "revision": "c240391dfc0d431f83bf061648c627dc",
     "url": "/tournament-schedule/index.html"
   }
 ];
