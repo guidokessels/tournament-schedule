@@ -20,6 +20,7 @@ const generateRounds = (
 ) => {
   const [hours, minutes] = time.split(":");
 
+  const lunchBreak = parseInt(lunchBreakLength, 10);
   const startTime = new Date();
   const endTime = new Date();
   startTime.setHours(hours);
@@ -36,18 +37,15 @@ const generateRounds = (
       end: formatTime(endTime)
     };
     results.push(round);
-    if (Math.floor(numberOfRounds / 2) === i) {
+    if (lunchBreak > 0 && Math.floor(numberOfRounds / 2) === i) {
       // Lunch time!
-      endTime.setTime(
-        endTime.getTime() +
-          minutesToMilliseconds(parseInt(lunchBreakLength, 10))
-      );
-      let lunchBreak = {
+      endTime.setTime(endTime.getTime() + minutesToMilliseconds(lunchBreak));
+      let breakRound = {
         name: "Lunch Break",
         start: round.end,
         end: formatTime(endTime)
       };
-      results.push(lunchBreak);
+      results.push(breakRound);
       startTime.setTime(endTime.getTime());
     } else {
       startTime.setTime(endTime.getTime() + minutesToMilliseconds(breakLength));
